@@ -13,6 +13,7 @@ goto :start
 
 
 :start
+title TimeSync
 w32tm /query /peers
 sc config w32time start= auto
 w32tm /config /syncfromflags:manual /manualpeerlist:"time.windows.com"

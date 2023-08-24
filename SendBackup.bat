@@ -18,6 +18,7 @@ goto :start
 
 
 :start
+title SendBackup
 SET Account=%~1
 SET Password=%~2
 SET Attachment=%~3
