@@ -12,7 +12,7 @@ echo $text
 cd <Path To Directory>
 sleep(2)
 echo GettingImage...
-curl -O image.jpg https://r4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-39a028ad21facdab26a7d87fb061260d.jpg
+curl -O image.jpg <url-of-image>
 echo Done!
 sleep(2)
 echo SettingWallpaper...
