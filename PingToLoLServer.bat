@@ -1,5 +1,16 @@
 @ECHO OFF
 
+GOTO :start
+
+ ______     ______     ______     ______    
+/\  ___\   /\  __ \   /\  __ \   /\  ___\   
+\ \___  \  \ \  __ \  \ \  __ \  \ \  __\   
+ \/\_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\ 
+  \/_____/   \/_/\/_/   \/_/\/_/   \/_____/ 
+                                            
+
+
+:start
 TITLE Ping To LoL LAN1 Server 
 
 
@@ -10,7 +21,7 @@ ECHO LoL Server
 :section1
 ECHO --------------------------
 
-:: Cambiaron el servidor tal vez. Esta era la dirección anterior -> 104.160.136.3
+:: Esta es la dirección de LAN1 -> 104.160.136.3
 ping.exe   104.160.136.3
 
 ECHO --------------------------

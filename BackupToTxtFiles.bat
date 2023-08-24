@@ -2,8 +2,19 @@
 ::de un fichero.
 
 @echo off
+goto :start
 
-title Titulo
+ ______     ______     ______     ______    
+/\  ___\   /\  __ \   /\  __ \   /\  ___\   
+\ \___  \  \ \  __ \  \ \  __ \  \ \  __\   
+ \/\_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\ 
+  \/_____/   \/_/\/_/   \/_/\/_/   \/_____/ 
+                                            
+
+
+:start
+
+title BackupToTxtFiles
 
 color 0B
 
@@ -18,6 +29,6 @@ dir/b/o:n > C:\Users\Carpeta\...archivo.txt
 
 cd C:\Users\Carpeta2\...
 
-dir/b/o:n > C:\Users\Carpeta\...archivo.txt
+dir/b/o:n > C:\Users\Carpeta\...archivo2.txt
 
 exit
