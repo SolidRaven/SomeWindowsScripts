@@ -1,5 +1,4 @@
-::Este .bat puede usarse con cualquier tipo de archivo si lo que se quiere es obtener los nombres de todos los archivos 
-::de un fichero.
+::Este .bat puede usarse con cualquier tipo de archivo si lo que se quiere es obtener los nombres de todos los archivos de un fichero.
 
 @echo off
 goto :start

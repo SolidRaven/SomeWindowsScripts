@@ -1,3 +1,5 @@
+:: Only if you play LoL xd
+
 @ECHO OFF
 
 GOTO :start
