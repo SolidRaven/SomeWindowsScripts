@@ -8,14 +8,24 @@ $text = @"
                                             
 
 "@
-echo $text
+$wallpapersList = @(
+'url1',
+'url2',
+'url3',
+'url4',
+'urlN'
+)
+
+$randomChoice = Get-Random -InputObject $wallpapersList
+cls
+Write-Host $text
 cd <Path To Directory>
-sleep(2)
-echo GettingImage...
-curl -O image.jpg <url-of-image>
-echo Done!
-sleep(2)
-echo SettingWallpaper...
+Start-Sleep(2)
+Write-Host GettingImage...
+curl -O image.jpg randomChoice
+Write-Host Done!
+Start-Sleep(2)
+Write-Host SettingWallpaper...
 $setwallpapersrc = @"
 using System.Runtime.InteropServices;
 
@@ -36,8 +46,8 @@ Add-Type -TypeDefinition $setwallpapersrc
 
 [Wallpaper]::SetWallpaper("C:\Path\image.jpg")
 
-sleep(2)
-echo Done!
+Start-Sleep(2)
+Write-Host Done!
 $host.SetShouldExit(0)
 
 
